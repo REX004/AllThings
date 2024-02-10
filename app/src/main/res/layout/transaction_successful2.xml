@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    tools:context=".sesion3.fragments.profilepac.TransactionSuccessful2">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/good_tick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/transaction"
+            android:layout_width="252dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:lineSpacingExtra="2sp"
+            android:text="Transaction Successful"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/roboto_medium"
+             />
+
+        <TextView
+            android:id="@+id/your_rider_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tracking_nu"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="top"
+            android:textSize="12sp"
+            android:lineSpacingExtra="0sp"
+            android:text="Your rider is on the way to your destination"
+            android:textAppearance="@style/your_rider_" />
+
+        <TextView
+            android:id="@+id/tracking_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:textSize="12sp"
+            android:lineSpacingExtra="0sp"
+            android:text="Tracking Number R-7458-4567-4434-5854"
+            android:textAppearance="@style/tracking_nu" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="342dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/background_stats"
+        android:text="Track my item"
+        app:backgroundTint="#0560FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/log_in"
+        android:layout_width="342dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:text="Go bach to homepage"
+        app:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"/>
+
+</LinearLayout>

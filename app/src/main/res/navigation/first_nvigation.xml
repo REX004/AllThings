@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_nvigation"
+    app:startDestination="@id/onboarding1">
+
+    <fragment
+        android:id="@+id/onboarding1"
+        android:name="com.tttrfge.deliveryapp.sesion1.Onboarding1"
+        android:label="Onboarding1" >
+        <action
+            android:id="@+id/action_onboarding1_to_onboarding4"
+            app:destination="@id/onboarding4" />
+        <action
+            android:id="@+id/action_onboarding1_to_onboarding3"
+            app:destination="@id/onboarding3" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding3"
+        android:name="com.tttrfge.deliveryapp.sesion1.Onboarding3"
+        android:label="Onboarding3" >
+        <action
+            android:id="@+id/action_onboarding3_to_signUpEmpty"
+            app:destination="@id/signUpEmpty" />
+        <action
+            android:id="@+id/action_onboarding3_to_logInEmpty"
+            app:destination="@id/logInEmpty" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding4"
+        android:name="com.tttrfge.deliveryapp.sesion1.Onboarding4"
+        android:label="Onboarding4" >
+        <action
+            android:id="@+id/action_onboarding4_to_onboarding3"
+            app:destination="@id/onboarding3" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpEmpty"
+        android:name="com.tttrfge.deliveryapp.sesion2.SignUpEmpty"
+        android:label="SignUpEmpty" >
+        <action
+            android:id="@+id/action_signUpEmpty_to_logInEmpty"
+            app:destination="@id/logInEmpty" />
+        <action
+            android:id="@+id/action_signUpEmpty_to_home3"
+            app:destination="@id/home3" />
+        <action
+            android:id="@+id/action_signUpEmpty_to_navigation"
+            app:destination="@id/navigation" />
+        <action
+            android:id="@+id/action_signUpEmpty_to_bottomNavigationActivity"
+            app:destination="@id/bottomNavigationActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/logInEmpty"
+        android:name="com.tttrfge.deliveryapp.sesion2.LogInEmpty"
+        android:label="log_in_empty"
+        tools:layout="@layout/log_in_empty" >
+
+        <action
+            android:id="@+id/action_logInEmpty_to_signUpEmpty"
+            app:destination="@id/signUpEmpty" />
+        <action
+            android:id="@+id/action_logInEmpty_to_home3"
+            app:destination="@id/home3" />
+        <action
+            android:id="@+id/action_logInEmpty_to_forgotPasswordEmpty2"
+            app:destination="@id/forgotPasswordEmpty2" />
+        <action
+            android:id="@+id/action_logInEmpty_to_navigation"
+            app:destination="@id/navigation" />
+        <action
+            android:id="@+id/action_logInEmpty_to_bottomNavigationActivity"
+            app:destination="@id/bottomNavigationActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/home3"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.homepac.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/forgotPasswordEmpty2"
+        android:name="com.tttrfge.deliveryapp.sesion2.ForgotPasswordEmpty"
+        android:label="ForgotPasswordEmpty" >
+
+        <action
+            android:id="@+id/action_forgotPasswordEmpty2_to_OTPVerification"
+            app:destination="@id/OTPVerification" />
+    </fragment>
+    <activity
+        android:id="@+id/OTPVerification"
+        android:name="com.tttrfge.deliveryapp.sesion2.OTPVerification"
+        android:label="otp_verification"
+        tools:layout="@layout/otp_verification" />
+    <fragment
+        android:id="@+id/newPasswordEmpty"
+        android:name="com.tttrfge.deliveryapp.sesion2.NewPasswordEmpty"
+        android:label="NewPasswordEmpty" />
+    <activity
+        android:id="@+id/bottomNavigationActivity"
+        android:name="com.tttrfge.deliveryapp.sesion3.BottomNavigationActivity"
+        android:label="BottomNavigationActivity" />
+</navigation>

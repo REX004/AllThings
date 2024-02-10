@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/flexible_pay"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="513dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-4sp"
+        android:text="Flexible Payment"
+        android:textAppearance="@style/quick_deliv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BT_Skip"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/button_6"
+        android:fontFamily="@font/roboto_bold"
+        app:backgroundTint="@color/blue_1"
+        android:textColor="@color/blue_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/flexible_pay"
+        app:layout_constraintTop_toBottomOf="@+id/different_m" />
+
+    <TextView
+        android:id="@+id/different_m"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="1sp"
+        android:text="Different modes of payment either before and after delivery without stress"
+        android:textAppearance="@style/enjoy_quick"
+        android:fontFamily="@font/roboto_regular"
+        android:translationY="-0.62sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flexible_pay" />
+
+    <Button
+        android:id="@+id/BT_SignUp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="43dp"
+        android:backgroundTint="@color/blue_1"
+        android:text="Next"
+        android:fontFamily="@font/roboto_bold"
+        android:background="@drawable/borders_button"
+        app:backgroundTint="@color/blue_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/flexible_pay"
+        app:layout_constraintTop_toBottomOf="@+id/different_m" />
+
+    <ImageView
+        android:id="@+id/screen_2"
+        android:layout_width="424dp"
+        android:layout_height="315.93dp"
+        android:layout_marginStart="-21dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="-13dp"
+        android:layout_marginBottom="395dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rafiki" />
+</androidx.constraintlayout.widget.ConstraintLayout>

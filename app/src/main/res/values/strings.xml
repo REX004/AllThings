@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">DeliveryApp</string>
+    <string name="quick_deliv">Quick Delivery At Your Doorstep</string>
+    <string name="enjoy_quick">Enjoy quick pick-up and delivery to your destination</string>
+    <string name="already_hav">Already have an account?</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_an_a">Create an account</string>
+    <string name="complete_th">Complete the sign up process to get started</string>
+    <string name="lablename">Full name</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="google_maps_api_key">AIzaSyBtdCkMGV38958aT-WRIulIu6dVf6RTu8o</string>
+    <string name="if_you_didn">If you didn\'t receive code,</string>
+    <string name="package_det">Package Details</string>
+    <string name="our_custome">Our customer care service line is available from 8 -9pm week days and 9 - 5 weekends - tap to call us today</string>
+</resources>

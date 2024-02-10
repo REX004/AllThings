@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/flexible_pay"
+        android:layout_width="287dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="68dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-4sp"
+        android:text="Real-time Tracking"
+        android:fontFamily="@font/roboto_bold"
+        android:textAppearance="@style/quick_deliv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/different_m"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="1sp"
+        android:text="Track your packages/items from the comfort of your home till final destination"
+        android:textAppearance="@style/enjoy_quick"
+        android:fontFamily="@font/roboto_regular"
+        android:translationY="-0.62sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flexible_pay" />
+
+    <Button
+        android:id="@+id/BT_SignUp"
+        android:layout_width="342dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="21dp"
+        android:background="@drawable/borders_button"
+        android:text="Sign Up"
+        android:fontFamily="@font/roboto_bold"
+        app:backgroundTint="@color/blue_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/different_m" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="399.94dp"
+        android:layout_height="298dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="-9dp"
+        android:layout_marginBottom="396dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/rafiki2" />
+
+    <TextView
+        android:id="@+id/have_accaont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/already_hav"
+        android:textAppearance="@style/already_hav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BT_SignUp" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/sign_in"
+        android:textAppearance="@style/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/have_accaont"
+        app:layout_constraintTop_toBottomOf="@+id/BT_SignUp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="387dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/first_screen" />
+
+    <TextView
+        android:id="@+id/quick_deliv"
+        android:layout_width="287dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="-4sp"
+        android:text="@string/quick_deliv"
+        android:textAppearance="@style/quick_deliv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/enjoy_quick"
+        android:layout_width="271dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="1sp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/enjoy_quick"
+        android:textAppearance="@style/enjoy_quick"
+        android:translationY="-0.62sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quick_deliv" />
+
+    <Button
+        android:id="@+id/BT_SignUp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="43dp"
+        android:text="Next"
+        android:background="@drawable/borders_button"
+        app:backgroundTint="@color/blue_1"
+        android:backgroundTint="@color/blue_1"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/quick_deliv"
+        app:layout_constraintTop_toBottomOf="@+id/enjoy_quick" />
+
+    <Button
+        android:id="@+id/BT_Skip"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/button_6"
+        app:backgroundTint="@color/blue_1"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/quick_deliv"
+        app:layout_constraintTop_toBottomOf="@+id/enjoy_quick" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

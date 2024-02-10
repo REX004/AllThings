@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="quick_deliv">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#0560FA</item>
+    </style>
+    <style name="enjoy_quick">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="already_hav">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="sign_in">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#0560FA</item>
+    </style>
+    <style name="create_an_a">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="complete_th">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="lablename">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="by_ticking_">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="hello_ken">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="current_bal">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="enable_dark">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="edit_profil">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="name_phone_">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="you_have_no">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="origin_deta">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="resend">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#0560FA</item>
+    </style>
+    <style name="if_you_didn">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="remember_pa">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="forgot_pass">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#0560FA</item>
+    </style>
+    <style name="package_det">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="select_deli">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="instant_del">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="mbaraugba_o">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="edit_packag">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#0560FA</item>
+    </style>
+    <style name="your_rider_">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="tracking_nu">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="transaction">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="go_back_to_">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#0560FA</item>
+    </style>
+    <style name="pay_with_wa">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="john_joshua">
+        <item name="android:textSize">16.04sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="thanks_for_">
+        <item name="android:textSize">12.03sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="profile">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#A7A7A7</item>
+    </style>
+    <style name="special_for">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#EC8000</item>
+    </style>
+    <style name="what_would_">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#0560FA</item>
+    </style>
+    <style name="customer_ca">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">#0560FA</item>
+    </style>
+    <style name="our_custome">
+        <item name="android:textSize">7.45sp</item>
+        <item name="android:textColor">#3A3A3A</item>
+    </style>
+    <style name="BlueCheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/blueCheckBox</item>
+    </style>
+
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sesion3.fragments.profilepac.Notification">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar5"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bords_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_back">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="84dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-3sp"
+            android:text="Notification"
+            android:textAppearance="@style/profile"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/vuesax_line"
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="154dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="228dp">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification_znak" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_196"
+        android:layout_width="201dp"
+        android:layout_height="36dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="95dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="319dp">
+
+        <TextView
+            android:id="@+id/you_have_no"
+            android:layout_width="181dp"
+            android:layout_height="18dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-3sp"
+            android:text="You have no notifications"
+            android:textAppearance="@style/you_have_no" />
+
+    </RelativeLayout>
+</FrameLayout>

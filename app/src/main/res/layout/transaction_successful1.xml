@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sesion3.fragments.profilepac.TransactionSuccessful1">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="124dp"
+        android:rotation="@integer/google_play_services_version"
+        android:src="@drawable/loading_inf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/frame_125"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="98dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+        <TextView
+            android:id="@+id/transaction"
+            android:layout_width="252dp"
+            android:layout_height="30dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text=""
+            android:textAppearance="@style/transaction"
+            android:translationY="-0.94sp" />
+
+        <TextView
+            android:id="@+id/your_rider_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tracking_nu"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="8dp"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:text="Your rider is on the way to your destination"
+            android:textAppearance="@style/your_rider_" />
+
+        <TextView
+            android:id="@+id/tracking_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:text="Tracking Number R-7458-4567-4434-5854"
+            android:textAppearance="@style/tracking_nu" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="342dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="570dp"
+        android:background="@drawable/background_stats"
+        android:text="Button"
+        app:backgroundTint="#0560FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/log_in"
+        android:layout_width="342dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/fvddfvdf"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2">
+
+        <TextView
+            android:id="@+id/go_back_to_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:lineSpacingExtra="-3sp"
+            android:text="Go back to homepage"
+            android:textAppearance="@style/go_back_to_" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

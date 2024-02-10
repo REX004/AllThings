@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sesion3.fragments.homepac.Home"
+    android:background="@color/white">
+
+    <EditText
+        android:id="@+id/editTextText2"
+        android:layout_width="341dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="49dp"
+        android:background="@drawable/borders_find_chats"
+        android:ems="10"
+        android:hint="Search services"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/button4"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:background="@drawable/button_home_page"
+        android:clipToOutline="true"
+        android:elevation="5dp"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button3">
+
+        <ImageView
+            android:id="@+id/ChatsIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="32.5dp"
+            android:src="@drawable/chats_img" />
+
+        <TextView
+            android:id="@+id/ChatsText"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ChatsIMG"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-3sp"
+            android:text="Chats"
+            android:textAppearance="@style/customer_ca" />
+
+        <TextView
+            android:id="@+id/ChatsTXT"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/ChatsText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Search for available rider within your area"
+            android:textAppearance="@style/our_custome"
+            android:translationY="-0.6sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/button3"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/button_home_page"
+        android:clipToOutline="true"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1">
+
+        <ImageView
+            android:id="@+id/fundWalletIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="32.5dp"
+            android:src="@drawable/fund_wallet" />
+
+        <TextView
+            android:id="@+id/fundWalletText"
+            android:layout_width="118dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fundWalletIMG"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-3sp"
+            android:text="Fund your wallet"
+            android:textAppearance="@style/customer_ca" />
+
+        <TextView
+            android:id="@+id/fundWalletTXT"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/fundWalletText"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="To fund your wallet is as easy as ABC, make use of our fast technology and top-up your wallet today"
+            android:textAppearance="@style/our_custome"
+            android:translationY="-0.6sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/button2"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:background="@drawable/button_home_page"
+        android:clipToOutline="true"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button1"
+        app:layout_constraintTop_toTopOf="@+id/button1">
+
+        <ImageView
+            android:id="@+id/sendPackIMG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="32.5dp"
+            android:src="@drawable/send_pac_img" />
+
+        <TextView
+            android:id="@+id/sendPac"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sendPackIMG"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-3sp"
+            android:text="Send a package"
+            android:textAppearance="@style/customer_ca" />
+
+        <TextView
+            android:id="@+id/TXsendPac"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/sendPac"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="Request for a driver to pick up or deliver your package for you"
+            android:textAppearance="@style/our_custome"
+            android:translationY="-0.6sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/frame_55"
+        android:layout_width="341dp"
+        android:layout_height="16dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="227dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextText2"
+        app:layout_constraintStart_toStartOf="@+id/editTextText2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/special_for"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:text="Special for you"
+            android:textAppearance="@style/special_for" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="1dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="1dp"
+            android:src="@drawable/arrow_square_right" />
+    </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/recyclerView2"
+            android:layout_width="700dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="22dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frame_55">
+
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?colorPrimary"
+                android:src="@drawable/tech_meetup" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/second_tab" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/third_tab" />
+
+            <ImageView
+                android:id="@+id/imageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/fourth_tab" />
+
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/what_would_"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="29dp"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:text="What would you like to do "
+        android:textAppearance="@style/what_would_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView2" />
+
+    <RelativeLayout
+        android:id="@+id/button1"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+
+        android:layout_marginTop="9dp"
+        android:background="?colorPrimary"
+        android:clipToOutline="true"
+        android:elevation="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/what_would_">
+
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="32.5dp"
+            android:src="@drawable/man_assist" />
+
+        <TextView
+            android:id="@+id/customer_ca"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView15"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:lineSpacingExtra="-3sp"
+            android:text="Customer Care"
+            android:textAppearance="@style/customer_ca" />
+
+        <TextView
+            android:id="@+id/our_custome"
+            android:layout_width="127dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/customer_ca"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="6dp"
+            android:gravity="top"
+            android:lineSpacingExtra="1sp"
+            android:text="@string/our_custome"
+            android:textAppearance="@style/our_custome"
+            android:translationY="-0.6sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

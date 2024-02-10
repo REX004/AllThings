@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sesion3.fragments.profilepac.SendPackageReceipt1Destination">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar4"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bords_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_back">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-3sp"
+            android:text="Send a package"
+            android:textAppearance="@style/profile"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/framer"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="256dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/Destination_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="Destination details"
+            android:textAppearance="@style/origin_deta"
+            android:translationY="-0.97sp" />
+
+        <TextView
+            android:id="@+id/Destination_details"
+            android:layout_width="222dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/Destination_detail"
+            android:layout_marginTop="4dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="Mbaraugba, Ovom Amaa Asaa, Abia state"
+            android:textAppearance="@style/mbaraugba_o"
+            android:translationY="-0.97sp" />
+
+        <TextView
+            android:id="@+id/TX_some"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Destination_details"
+            android:layout_marginTop="4dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="+234 56543 96854"
+            android:textAppearance="@style/mbaraugba_o"
+            android:translationY="-0.97sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_197"
+        android:layout_width="222dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="156dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/origin_deta"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="Origin details"
+            android:textAppearance="@style/origin_deta"
+            android:translationY="-0.97sp" />
+
+        <TextView
+            android:id="@+id/mbaraugba_o"
+            android:layout_width="222dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/origin_deta"
+            android:layout_marginTop="4dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="Mbaraugba, Ovom Amaa Asaa, Abia state"
+            android:textAppearance="@style/mbaraugba_o"
+            android:translationY="-0.97sp" />
+
+        <TextView
+            android:id="@+id/some_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mbaraugba_o"
+            android:layout_marginTop="4dp"
+            android:gravity="top"
+            android:lineSpacingExtra="2sp"
+            android:text="+234 56543 96854"
+            android:textAppearance="@style/mbaraugba_o"
+            android:translationY="-0.97sp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/make_payment"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_pacage"
+        android:background="@drawable/background_stats"
+        app:backgroundTint="#0560FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edit_pacage" />
+
+    <Button
+        android:id="@+id/edit_pacage"
+        android:layout_width="159dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="195dp"
+        android:text="Edit package"
+        android:textColor="#0560FA"
+        app:backgroundTint="@color/white"
+        android:background="@drawable/background_stats2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/make_payment"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

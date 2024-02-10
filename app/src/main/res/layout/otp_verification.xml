@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".sesion2.OTPVerification"
+    android:id="@+id/otpCode">
+
+    <TextView
+        android:id="@+id/welcome_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="195dp"
+        android:text="OTP Verification"
+        android:fontFamily="@font/roboto_regular"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal|top"
+        android:lineSpacingExtra="0sp"
+        android:text="Enter the 6 digit numbers sent to your email"
+        android:textAppearance="@style/complete_th"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/welcome_back"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_back" />
+
+    <TextView
+        android:id="@+id/if_you_didn"
+        android:layout_width="157dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="69dp"
+        android:gravity="top"
+
+        android:fontFamily="@font/roboto_regular"
+        android:lineSpacingExtra="0sp"
+        android:text="@string/if_you_didn"
+        android:textAppearance="@style/if_you_didn"
+        app:layout_constraintBottom_toBottomOf="@+id/resend"
+        app:layout_constraintEnd_toStartOf="@+id/resend"
+        app:layout_constraintStart_toStartOf="@+id/frame_42" />
+
+    <TextView
+        android:id="@+id/resend"
+        android:layout_width="46dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="226dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="70dp"
+        android:gravity="top"
+        android:lineSpacingExtra="0sp"
+        android:text="resend"
+        android:fontFamily="@font/roboto_regular"
+        android:textAppearance="@style/resend"
+        app:layout_constraintEnd_toEndOf="@+id/frame_42"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/frame_42"
+        app:layout_constraintTop_toBottomOf="@+id/frame_42" />
+
+    <RelativeLayout
+        android:id="@+id/frame_42"
+        android:layout_width="342dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintBottom_toTopOf="@+id/BT_SignUp3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <EditText
+            android:id="@+id/edit_1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/edit_2"
+            android:background="@drawable/borders_edit_verefication">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_2"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/edit_3"
+            android:background="@drawable/borders_edit_verefication">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_3"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/edit_4"
+            android:background="@drawable/borders_edit_verefication">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_4"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/edit_5"
+            android:background="@drawable/borders_edit_verefication">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_5"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/edit_6"
+            android:background="@drawable/borders_edit_verefication">
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/edit_6"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/borders_edit_verefication">
+
+        </EditText>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/BT_SignUp3"
+        android:layout_width="342dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="424dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/borders_button"
+        android:text="Set New Password "
+        app:backgroundTint="@color/grey"
+        android:fontFamily="@font/roboto_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

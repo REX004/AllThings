@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.homepac.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home"
+        />
+    <fragment
+        android:id="@+id/track"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.trackpacage.Track"
+        android:label="fragment_track"
+        tools:layout="@layout/fragment_track" >
+        <action
+            android:id="@+id/action_track_to_trackingPackage"
+            app:destination="@id/trackingPackage" />
+    </fragment>
+    <fragment
+        android:id="@+id/wallet"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.walletpacage.Wallet"
+        android:label="fragment_wallet"
+        tools:layout="@layout/fragment_wallet" >
+        <action
+            android:id="@+id/action_wallet_to_addPaymentMethod"
+            app:destination="@id/addPaymentMethod" />
+    </fragment>
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.profilepac.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profile_to_notification"
+            app:destination="@id/notification" />
+        <action
+            android:id="@+id/action_profile_to_sendApackageEmpty"
+            app:destination="@id/sendApackageEmpty" />
+        <action
+            android:id="@+id/action_profile_to_addPaymentMethod"
+            app:destination="@id/addPaymentMethod" />
+        <action
+            android:id="@+id/action_profile_to_transactionSuccessful1"
+            app:destination="@id/transactionSuccessful1" />
+    </fragment>
+    <fragment
+        android:id="@+id/notification"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.profilepac.Notification"
+        android:label="notification"
+        tools:layout="@layout/notification" />
+    <fragment
+        android:id="@+id/addPaymentMethod"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.walletpacage.AddPaymentMethod"
+        android:label="add_payment_method"
+        tools:layout="@layout/add_payment_method" />
+    <fragment
+        android:id="@+id/sendApackageEmpty"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.profilepac.SendApackageEmpty"
+        android:label="send_apackage_empty"
+        tools:layout="@layout/send_apackage_empty" />
+    <fragment
+        android:id="@+id/trackingPackage"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.profilepac.TrackingPackage"
+        android:label="fragment_tracking_package"
+        tools:layout="@layout/fragment_tracking_package" />
+    <fragment
+        android:id="@+id/transactionSuccessful1"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.profilepac.TransactionSuccessful1"
+        android:label="transaction_successful1"
+        tools:layout="@layout/transaction_successful1" >
+        <action
+            android:id="@+id/action_transactionSuccessful1_to_transactionSuccessful2"
+            app:destination="@id/transactionSuccessful2" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionSuccessful2"
+        android:name="com.tttrfge.deliveryapp.sesion3.fragments.profilepac.TransactionSuccessful2"
+        android:label="TransactionSuccessful2"
+        tools:layout="@layout/transaction_successful2"/>
+</navigation>

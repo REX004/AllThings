@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sesion3.fragments.profilepac.SendApackageEmpty">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar6"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bords_toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/arrow_back">
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|top"
+            android:lineSpacingExtra="-3sp"
+            android:text="Send a package"
+            android:textAppearance="@style/profile"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="24dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/frame_210"
+        android:layout_width="342dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="151dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/origin_det"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:text="Origin Details"
+            android:textAppearance="@style/origin_deta" />
+
+        <EditText
+            android:id="@+id/rectangle_1"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:shadowColor="@color/black"
+            android:hint="Address"
+
+            android:layout_below="@+id/origin_det"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/information_borders" />
+
+        <EditText
+            android:id="@+id/rectangle_2"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:hint="State,Country"
+            android:layout_below="@+id/rectangle_1"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/information_borders"
+            />
+
+        <EditText
+            android:id="@+id/rectangle_3"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:hint="Phone number"
+            android:layout_below="@+id/rectangle_2"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/information_borders" />
+
+        <EditText
+            android:id="@+id/rectangle_4"
+            android:layout_width="342dp"
+            android:hint="Others"
+            android:layout_height="32dp"
+            android:layout_below="@+id/rectangle_3"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/information_borders" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_211"
+        android:layout_width="342dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_210" >
+
+        <TextView
+            android:id="@+id/origin_det2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:text="Destination Details"
+            android:textAppearance="@style/origin_deta" />
+
+        <EditText
+            android:id="@+id/rectangle_11"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:hint="Address"
+            android:layout_above="@+id/rectangle_12"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/information_borders" />
+
+        <EditText
+            android:id="@+id/rectangle_12"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:hint="State,Country"
+            android:layout_above="@+id/rectangle_13"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/information_borders" />
+
+        <EditText
+            android:id="@+id/rectangle_13"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:hint="Phone number"
+            android:layout_above="@+id/rectangle_14"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/information_borders" />
+
+        <EditText
+            android:id="@+id/rectangle_14"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:hint="Others"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/information_borders" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_214"
+        android:layout_width="342dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_211">
+
+        <TextView
+            android:id="@+id/package_det"
+            android:layout_width="101dp"
+            android:layout_height="16dp"
+            android:text="@string/package_det"
+            android:textAppearance="@style/package_det"
+            android:lineSpacingExtra="0sp"
+            android:gravity="top"
+            />
+
+        <EditText
+            android:id="@+id/rectangle_21"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:layout_above="@+id/rectangle_22"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/information_borders"
+            android:hint="package items" />
+
+        <EditText
+            android:id="@+id/rectangle_22"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:layout_above="@+id/rectangle_23"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/information_borders"
+            android:hint="Weight of item(kg)" />
+
+        <EditText
+            android:id="@+id/rectangle_23"
+            android:layout_width="342dp"
+            android:layout_height="32dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/information_borders"
+            android:hint="Worth of Items" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/frame_216"
+        android:layout_width="342dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_214"
+    >
+
+        <TextView
+            android:id="@+id/select_deli"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingExtra="0sp"
+            android:text="Select delivery type"
+            android:textAppearance="@style/select_deli" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="159dp"
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/background_stats">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/clock_stats"
+                app:layout_constraintBottom_toTopOf="@+id/instant_del"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/instant_del"
+                android:layout_width="96dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="Instant delivery "
+                android:textAppearance="@style/instant_del"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="159dp"
+            android:layout_height="75dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/background_stats2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/scheduled_felivery"
+                app:layout_constraintBottom_toTopOf="@+id/instant_dely"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/instant_dely"
+                android:layout_width="119dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:gravity="top"
+                android:lineSpacingExtra="0sp"
+                android:text="Scheduled delivery"
+                android:textAppearance="@style/instant_del"
+                android:textColor="#A7A7A7"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/catsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/frame_210"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar6" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
