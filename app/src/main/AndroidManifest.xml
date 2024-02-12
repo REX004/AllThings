@@ -27,20 +27,22 @@
             android:name=".OsmDroifMap"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".TestApp"
             android:exported="true">
 
 
-<!--             <intent-filter>-->
-<!--             <action android:name="android.intent.action.MAIN" />-->
+             <intent-filter>
+             <action android:name="android.intent.action.MAIN" />
 
 
-<!--             <category android:name="android.intent.category.LAUNCHER" />-->
-<!--             </intent-filter>-->
+             <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
         </activity>
         <activity
             android:name=".sesion3.fragments.profilepac.TransactionSuccessful2"
-            android:exported="true"></activity>
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".YandexMapkitActivity"
             android:exported="true">
@@ -57,13 +59,13 @@
             android:name=".sesion2.OTPVerification"
             android:exported="true" />
         <activity
-            android:name=".sesion3.BottomNavigationActivity"
+            android:name=".sesion3.fragments.profilepac.SendApackageEmpty"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
     </application>
 

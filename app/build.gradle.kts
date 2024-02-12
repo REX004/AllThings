@@ -51,7 +51,9 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.2")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.6.2")
     implementation("com.google.android.gms:play-services-maps:18.2.0")
-    testImplementation("junit:junit:4.13.2")
+    implementation("org.junit.jupiter:junit-jupiter:5.8.1")
+    implementation("com.google.firebase:firebase-firestore-ktx:24.10.2")
+    implementation("org.testng:testng:6.9.6")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.0-beta01")
@@ -59,6 +61,7 @@ dependencies {
     implementation("com.android.volley:volley-cronet:1.2.1")
     // Dynamic Feature Module Support
     implementation("androidx.navigation:navigation-dynamic-features-fragment:2.3.0-beta01")
+    testImplementation("junit:junit:4.13.2")
 
     // Testing Navigation
     implementation ("androidx.room:room-runtime:2.3.0")
@@ -86,8 +89,13 @@ dependencies {
         //OSM Droid
     implementation ("org.osmdroid:osmdroid-android:6.1.18")
 
+    testImplementation(kotlin("test"))
+
     implementation("androidx.biometric:biometric:1.2.0-alpha03")
     implementation ("org.jetbrains.kotlin:kotlin-stdlib:1.5.21")
+
+
+
 
 
 }

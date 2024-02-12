@@ -10,6 +10,7 @@ import android.provider.OpenableColumns
 import android.telephony.PhoneNumberFormattingTextWatcher
 import android.util.Log
 import android.widget.Button
+import io.github.jan.supabase.gotrue.providers.builtin.OTP
 import android.widget.ImageView
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,7 @@ import io.github.jan.supabase.annotations.SupabaseExperimental
 import io.github.jan.supabase.annotations.SupabaseInternal
 import io.github.jan.supabase.createSupabaseClient
 import io.github.jan.supabase.gotrue.Auth
+import io.github.jan.supabase.gotrue.OtpType
 import io.github.jan.supabase.gotrue.auth
 import io.github.jan.supabase.gotrue.providers.builtin.Email
 import io.github.jan.supabase.postgrest.Postgrest
@@ -176,9 +178,9 @@ class MainActivity : AppCompatActivity() {
                 email = "puknitov@gmail.com"
                 password = "example-password"
             }
-//            supabase.auth.signInWith(OTP)
+            supabase.auth.signInWith(OTP)
 //
-//            supabase.auth.resendEmail(OtpType.Email.EMAIL_CHANGE, "puknitov@gmail.com")
+            supabase.auth.resendEmail(OtpType.Email.EMAIL_CHANGE, "puknitov@gmail.com")
 //
 //            supabase.auth.resetPasswordForEmail("puknitov@gmail.com")
 //            supabase.auth.reauthenticate()
